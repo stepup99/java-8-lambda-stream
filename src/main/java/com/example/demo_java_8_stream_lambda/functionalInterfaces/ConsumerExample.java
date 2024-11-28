@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.function.Consumer;
 
 public class ConsumerExample {
-    static Consumer<Student> c1 = (s) -> System.out.println(s);
+    static Consumer<Student> c1 = System.out::println;
     static  Consumer<Student> c3 = (student) -> System.out.println(student.getName());
     static Consumer<Student> c4 = (student) -> System.out.println(student.getActivities());
     public static void printName(){

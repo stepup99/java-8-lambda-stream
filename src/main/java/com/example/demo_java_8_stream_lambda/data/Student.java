@@ -12,16 +12,16 @@ public class Student {
     private int noteBooks;
     private Optional<Bike> bike;
 
+    public Student() {
+
+    }
+
     public Optional<Bike> getBike() {
         return bike;
     }
 
     public void setBike(Optional<Bike> bike) {
         this.bike = bike;
-    }
-
-    public Student(){
-
     }
 
     public Student(String name, int gradeLevel, double gpa, String gender, int noteBooks, List<String> activities) {
@@ -98,8 +98,14 @@ public class Student {
 
     public void printListOfActivities(){
 
-        System.out.println("List of Activities are : " + this.activities);
+        System.out.println(activities);
     }
+
+    public  static void  printListOfActivities(Student student){
+        System.out.println(student.getActivities());
+    }
+
+
 
     @Override
     public String toString() {
