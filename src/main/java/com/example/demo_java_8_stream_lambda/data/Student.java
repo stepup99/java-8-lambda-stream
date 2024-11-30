@@ -12,6 +12,8 @@ public class Student {
     private int noteBooks;
     private Optional<Bike> bike;
 
+
+
     public Student() {
 
     }
@@ -19,6 +21,8 @@ public class Student {
     public Optional<Bike> getBike() {
         return bike;
     }
+
+
 
     public void setBike(Optional<Bike> bike) {
         this.bike = bike;
